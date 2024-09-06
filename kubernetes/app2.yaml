@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: gcr.io/<PROJECT_ID>/gke-repo/flask-image
+          image: gcr.io/$PROJECT_ID/gke-repo/flask-image
           ports:
             - containerPort: 8081
 
