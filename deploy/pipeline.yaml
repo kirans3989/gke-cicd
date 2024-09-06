@@ -7,11 +7,8 @@ spec:
   serialPipeline:
     stages:
       - targetId: dev  # This should match the target defined in your target configuration (dev.yaml)
-        # profiles:
-        # - dev
-        # - targetId: staging
-        #   profiles:
-        #   - staging
-     - targetId: prod
-        #   profiles:
-         #   - prod
+        profiles:
+          - dev
+      - targetId: prod  # Correct indentation and structure
+        profiles:
+          - prod
