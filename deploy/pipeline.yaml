@@ -1,16 +1,17 @@
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:
-  name: gke-cicd-pipeline
+  name: gke-cicd-pipeline  # Name of your pipeline
 spec:
-  targets:
-    - dev
-  # profiles:
-  # - dev
-  # - targetId: staging
-  #   profiles:
-  #   - staging
-  targetId: 
-    - prod
-  #   profiles:
-  #   - prod
+  description: "Delivery pipeline for GKE CICD"
+  serialPipeline:
+    stages:
+      - targetId: dev  # This should match the target defined in your target configuration (dev.yaml)
+        # profiles:
+        # - dev
+        # - targetId: staging
+        #   profiles:
+        #   - staging
+     - targetId: prod
+        #   profiles:
+         #   - prod
