@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: gcr.io/$PROJECT_ID/gke-repo/quickstart-image
+          image: gcr.io/gcp-dev-426803/gke-repo/quickstart-image
           ports:
             - containerPort: 8080
 
